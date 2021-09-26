@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ $# == 3 ]
+if (("$#" <= "3"))
 then
 SUM=0
 for i in $@
@@ -17,5 +17,5 @@ done
 echo "Sum=$SUM"
 	
 else
-	echo "Please enter 3 arguments"
+	echo "Please enter 1-3 arguments"
 fi
